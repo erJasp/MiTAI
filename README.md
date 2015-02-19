@@ -1,5 +1,5 @@
-# Mitel-MiTAI
-An analysis of the MiTAI network protocol, used for interaction with a Mitel PBX
+# MiTAI
+An analysis of the MiTAI network protocol, used for interaction with, for example, a Mitel PBX.
 
 ## Table of Contents
 * [Connections](#connections)
@@ -14,8 +14,6 @@ An analysis of the MiTAI network protocol, used for interaction with a Mitel PBX
     * [Unknown Attribute #2](#unknown-attribute-2)
     * [Body Length](#body-length)
     * [Message Type](#message-type)
-    * [Header End](#header-end)
-  * [Body](#body)
 * [Actions](#actions)
   * [Connect](#connect)
   * [Heartbeat](#heartbeat)
@@ -87,9 +85,6 @@ The body length is the total amount of characters after the [Header End](#header
 The seems like the message type indicates the structure of the body content, but the exact function is yet unknown. 
 
 Observed values: `N` (connection), `0` (heartbeat), `H` (device action)
-
-### Body
-...
 
 ## Actions
 
